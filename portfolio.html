@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        body{
+            background-color: aqua;
+        }
+        .container{
+            background-color:black;
+            height: 100vh;
+            display: grid;
+            
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        .box{
+            background-color:black;
+        }
+        .box1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-color: rgb(43, 38, 38);
+
+        }
+        .box2{
+            grid-row: 1/3;
+            grid-column: 2/4;
+          
+        }
+        .box4{
+            grid-row: 2/5;
+            grid-column: 1/2;
+           
+            background-color: rgb(43, 38, 38);
+
+        }
+        #about{
+          grid-row:3/4;
+          
+          grid-column: 2/5;
+        }
+        .box6{
+            display: grid;
+            grid-column: 5/6;
+            grid-row:1/4;
+            display: flex;
+            flex-direction: column;
+            
+            background-color: rgb(43, 38, 38);
+
+
+        }
+        .box6 h2{
+            color: rgb(13, 207, 123);
+            text-align: center;
+            margin:10vh 0vh ;
+            font-size: 30px;
+
+        }
+        .social-links{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+          
+        }
+        .social-links>a{
+            margin: 2vh;
+        }
+      .box3{
+        grid-row: 1/3;
+        grid-column: 4/5;
+      }
+     
+      .box5{
+        grid-column: 2/4;
+        grid-row: 3/4;
+      }
+      .box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+ 
+      }
+      .box1>.first>h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+        
+        color: rgb(13, 207, 123);
+      }
+      .box1>.first>p{
+        font-size: 20px;
+        margin: 20px;
+
+      }
+      .box2{
+        display: flex;
+        
+        
+      }
+      .box2 img{
+        width: 100%;
+        height: 100%;
+
+      }
+      .box3{
+        display: flex;
+        
+        align-items: center;
+      }
+
+
+      .box3>.first>h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+        color: rgb(13, 207, 123);
+      }
+      .box3>.first>p{
+        font-size: 20px;
+        margin: 10px;
+
+      }
+      .box5{
+        padding: 10px;
+        background-color: black;
+      }
+      .box5 h2{
+        color: rgb(13, 207, 123);
+        
+      }
+      .box5 hr{
+        color: aliceblue;
+        margin:5px 0px 20px 0px;
+        color:rgb(224, 217, 217);
+
+      }
+      .box5 p{
+        line-height: 25px;
+      }
+      .box4{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-content: center;
+
+    
+        
+      }
+      nav{
+        display: flex;
+        flex-direction: column;
+           justify-content: space-evenly;
+           margin: 0px 30%;
+        
+      }
+      nav a{
+        align-content: space-evenly;
+        text-decoration: none;
+       
+        margin: 10%;
+      }
+
+.box2,.box5,.box3,#about{
+  background-color: #333;
+}
+      
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="first">
+                <h2>Hariom Rajpoot</h2>
+                <p>Full stack developer</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="first">
+                <img src="./Screenshot_2025-04-15_205431-removebg-preview.png">
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="first">
+                <h2>Hariom Rajpoot</h2>
+                <p>Full stack developer</p>
+                <p>Secure website</p>
+            </div>
+            
+        </div>
+        <div class="box box4">
+          <hr>
+          
+           <nav>
+            <a href="#about">About</a>
+            <a href="./port_education.html">Education</a>
+            <a href="./port_skills.html">UG coursework</a>
+            <a href="./port_skills.html">Technical  Skills</a>
+           
+            <a href="./port_programmaing.html">Programming</a>
+            <a href="./port_project.html">Projects</a>
+           </nav>
+        </div>
+
+
+
+        <div class=" box6">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/hariom-rajpoot-765501360/" target="_blank" title="LinkedIn">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/916393371158" target="_blank" title="WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+      </a>
+    </div>
+
+        </div>
+        <section id="about">
+            <div class="box box5">
+                <div class="first">
+                    <h2>Avout Me</h2>
+                    <hr>
+                    <p>I’m Hariom Rajpoot, a dedicated Full Stack Developer skilled in building responsive, efficient web applications. I specialize in both front-end and back-end technologies, delivering clean code and seamless user experiences. Passionate about learning and innovation, I enjoy solving problems and bringing creative ideas to life through technology.</p>
+    
+                </div>
+            </div>
+            
+        </section>
+        
+
+
+       
+    </div>
+    
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

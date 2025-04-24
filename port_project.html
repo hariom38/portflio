@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Hariom Rajpoot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    .projects-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 170, 0.2);
+    }
+
+    .projects-section h2 {
+      color: #0fdb6d;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      background-color: #333;
+      border-left: 4px solid #0fdb6d;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px #0fdb6d66;
+    }
+
+    .project-card h3 {
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .tech-stack {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 15px;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      color: #0fdb6d;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .project-card h3 {
+        font-size: 18px;
+      }
+
+      .project-card p,
+      .tech-stack {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="projects-section">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website to showcase my skills, resume, and projects. Built with responsive design for all devices.</p>
+      <p class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <div class="project-links">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Task Manager App</h3>
+      <p>A full-stack CRUD app to manage daily tasks with login functionality and status filters.</p>
+      <p class="tech-stack"><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, EJS</p>
+      <div class="project-links">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>A web app that shows real-time weather using OpenWeather API with search by city name.</p>
+      <p class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript, API Integration</p>
+      <div class="project-links">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

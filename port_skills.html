@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Skills - Hariom Rajpoot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    .skills-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 170, 0.2);
+    }
+
+    .skills-section h2 {
+      text-align: center;
+      color: #0fdb6d;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #0fdb6d;
+      transition: 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px #0fdb6d66;
+    }
+
+    .skill-card h3 {
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+
+    .skill-card ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .skill-card ul li {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .skills-section {
+        padding: 20px;
+      }
+
+      .skill-card h3 {
+        font-size: 18px;
+      }
+
+      .skill-card ul li {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="skills-section">
+    <h2>Full Stack Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 / SCSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>Bootstrap / Tailwind CSS</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>REST APIs</li>
+          <li>Authentication (JWT)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <ul>
+          <li>MongoDB</li>
+          <li>MySQL</li>
+          <li>Mongoose ORM</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>Postman</li>
+          <li>npm / Yarn</li>
+          <li>Netlify / Vercel</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Version Control</h3>
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
